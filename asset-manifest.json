@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/alandavidsoto/openweather-API/static/css/main.ed3e6b63.chunk.css",
-    "main.js": "/alandavidsoto/openweather-API/static/js/main.da91f069.chunk.js",
-    "main.js.map": "/alandavidsoto/openweather-API/static/js/main.da91f069.chunk.js.map",
-    "runtime-main.js": "/alandavidsoto/openweather-API/static/js/runtime-main.99802477.js",
-    "runtime-main.js.map": "/alandavidsoto/openweather-API/static/js/runtime-main.99802477.js.map",
-    "static/js/2.3777ecf9.chunk.js": "/alandavidsoto/openweather-API/static/js/2.3777ecf9.chunk.js",
-    "static/js/2.3777ecf9.chunk.js.map": "/alandavidsoto/openweather-API/static/js/2.3777ecf9.chunk.js.map",
-    "static/js/3.a523efd7.chunk.js": "/alandavidsoto/openweather-API/static/js/3.a523efd7.chunk.js",
-    "static/js/3.a523efd7.chunk.js.map": "/alandavidsoto/openweather-API/static/js/3.a523efd7.chunk.js.map",
-    "index.html": "/alandavidsoto/openweather-API/index.html",
-    "static/css/main.ed3e6b63.chunk.css.map": "/alandavidsoto/openweather-API/static/css/main.ed3e6b63.chunk.css.map",
-    "static/js/2.3777ecf9.chunk.js.LICENSE.txt": "/alandavidsoto/openweather-API/static/js/2.3777ecf9.chunk.js.LICENSE.txt"
+    "main.css": "/openweather-API/static/css/main.ed3e6b63.chunk.css",
+    "main.js": "/openweather-API/static/js/main.da91f069.chunk.js",
+    "main.js.map": "/openweather-API/static/js/main.da91f069.chunk.js.map",
+    "runtime-main.js": "/openweather-API/static/js/runtime-main.62db100b.js",
+    "runtime-main.js.map": "/openweather-API/static/js/runtime-main.62db100b.js.map",
+    "static/js/2.3777ecf9.chunk.js": "/openweather-API/static/js/2.3777ecf9.chunk.js",
+    "static/js/2.3777ecf9.chunk.js.map": "/openweather-API/static/js/2.3777ecf9.chunk.js.map",
+    "static/js/3.a523efd7.chunk.js": "/openweather-API/static/js/3.a523efd7.chunk.js",
+    "static/js/3.a523efd7.chunk.js.map": "/openweather-API/static/js/3.a523efd7.chunk.js.map",
+    "index.html": "/openweather-API/index.html",
+    "static/css/main.ed3e6b63.chunk.css.map": "/openweather-API/static/css/main.ed3e6b63.chunk.css.map",
+    "static/js/2.3777ecf9.chunk.js.LICENSE.txt": "/openweather-API/static/js/2.3777ecf9.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.99802477.js",
+    "static/js/runtime-main.62db100b.js",
     "static/js/2.3777ecf9.chunk.js",
     "static/css/main.ed3e6b63.chunk.css",
     "static/js/main.da91f069.chunk.js"
