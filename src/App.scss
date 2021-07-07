@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 400;
+}
+html {
+    scroll-behavior: smooth;
+}
+body {
+    background-color: #eee;
+    max-width: 2000px;
+    margin: 0px auto;
+}
+.buscador-fixed{
+    position: fixed;
+    animation: trasladeSearch 600ms linear 1 forwards;
+    @keyframes trasladeSearch {
+        from {
+            top: -100px;
+        }
+        to {
+            top: 20px;
+        }
+    }
+}
+.titulo {
+    margin: 30px;
+    background-color: #444;
+    color: #fff;
+    border-radius: 7px;
+    text-align: center;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card {
+    display: flex;
+    border-radius: 10px;
+    background-color: #fff;
+    color: #fff;
+    box-shadow: 0px 0px 2px #aaa;
+    overflow: hidden;
+    font-size: 22px;
+    width: 45%;
+    text-align: center;
+    .card-left {
+        width: 45%;
+        background-color: #3f88fb;
+        & > div {
+            margin: 15px;
+        }
+        .icono-state {
+            img {
+                border-radius: 10px;
+                box-shadow: 0px 0px 3px #555;
+            }
+        }
+        
+        .temp_max_min {
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+    .card-right{
+        width: 55%;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-around;
+        justify-content: space-around;
+        background-color: #4e91f9;
+        & > span {
+            display: block;
+            width: 45%;
+            border-radius: 4px;
+        }
+        span{
+            b {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+
+
+//ACA COMIENZA LOS ESTILOS MAS ESPECIFICOS
+#root {
+    scroll-behavior: smooth;
+    .cabecera {
+        width: 100%;
+        height: 50vh;
+        min-height: 300px;
+        background-image: url('https://res.cloudinary.com/dcea83ydd/image/upload/v1625633033/OpenWeather%20API/sky_hbjjal.jpg');
+        background-size: 100%;
+        background-position: right bottom;
+        background-color: #111;
+        background-blend-mode: hard-light;
+        box-shadow: 0px 0px 3px #aaa;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        img {
+            width: 90px;
+            position: absolute;
+            top: 3px;
+            left: 3px;
+            animation: animacion 7s linear infinite;
+        }
+        @keyframes animacion{
+
+            100% {
+                transform:rotate(360deg);
+            }
+        }
+        h1 {
+            font-size: 40px;
+            color: #fff;
+            font-weight: bold;
+            text-shadow: 0px 0px 3px #333;
+            margin-bottom: 20px;
+        }
+        .formulario {
+            width: 50%;
+            height: 50px;
+            display: flex;
+            border-radius: 40px;
+            overflow: hidden;
+            [type="text"]{
+                width: 90%;
+                border: none;
+                outline: none;
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 20px;
+            
+                font-weight: 100;
+            }
+            [type="submit"] {
+                width: 10%;
+                border: none;
+                cursor: pointer;
+                background: #fff;
+                color: #555;
+                font-size: 20px;
+                transition: 250ms;
+                border-left: 1px solid #ccc;
+                &:hover {
+                    background-color: rgb(68, 149, 255);
+                    color: #fff;
+                
+                }
+            }
+        }
+    }
+    .ciudades {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        row-gap: 20px;
+    }
+    section {
+        margin: 20px auto;
+        width: 100%;
+        font-size: 25px;
+        color: #333;
+    
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+@media (max-width: 700px){
+    .titulo {
+        font-size: 23px;
+        width: 90%;
+        max-width: 500px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        font-size: 17px;
+        width: 80%;
+        max-width: 260px;
+        text-align: center;
+        .card-left {
+            width: 100%;
+            background-color: #3f88fb;
+            & > div {
+                margin: 5px;
+            }
+            .icono-state {
+                img {
+                    width: 80px;
+                    border-radius: 10px;
+                    box-shadow: 0px 0px 3px #555;
+                }
+            }
+            
+            .temp_max_min {
+                display: flex;
+                justify-content: space-evenly;
+            }
+        }
+        .card-right{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+            background-color: #4e91f9;
+            & > span {
+                display: block;
+                width: 45%;
+                border-radius: 4px;
+                margin: 5px;
+            }
+            span{
+                b {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    #root {
+        .cabecera {
+            height: 20vh;
+            min-height: initial;
+            img {
+                width: 11%;
+                max-width: 50px;
+            }
+            h1 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .formulario {
+                width: 95%;
+                max-width: 450px;
+                height: 35px;
+                [type="text"]{
+                    width: 85%;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    font-size: 15px;
+                }
+                [type="submit"] {
+                    width: 15%;
+                    font-size: 17px;
+                }
+            }
+        }
+        .ciudades {
+            row-gap: 15px;
+        }
+    }
+}
+@media (min-width:700px) and (max-width: 1000px){
+    .titulo {
+        font-size: 28px;
+        width: 90%;
+        max-width: 750px;
+    }
+    .card {
+        display: flex;
+        flex-direction: column;
+        font-size: 19px;
+        width: 45%;
+        max-width: 450px;
+        text-align: center;
+        .card-left {
+            width: 100%;
+            background-color: #3f88fb;
+            & > div {
+                margin: 7px;
+            }
+            .icono-state {
+                img {
+                    width: 90px;
+                }
+            }
+        }
+        .card-right{
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-around;
+            justify-content: space-around;
+            background-color: #4e91f9;
+            & > span {
+                display: block;
+                width: 45%;
+                border-radius: 4px;
+                margin: 7px;
+            }
+            span{
+                b {
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    #root {
+        .cabecera {
+            height: 30vh;
+            min-height: initial;
+            img {
+                width: 8%;
+                max-width: 70px;
+            }
+            h1 {
+                font-size: 30px;
+                margin-bottom: 10px;
+            }
+            .formulario {
+                width: 70%;
+                max-width: 550px;
+                height: 42px;
+                [type="text"]{
+                    width: 90%;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    font-size: 18px;
+                }
+                [type="submit"] {
+                    width: 10%;
+                    font-size: 18px;
+                }
+            }
+        }
+        .ciudades {
+            row-gap: 18px;
+        }
+    }
+}
