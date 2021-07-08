@@ -1,3 +1,15 @@
+Página web relacionada al Clima.
+Consiste de 3 secciones:
+
+1- ubicación actual : Te muestra tu ubicación aproximada por medio de la localización (latitud y longitud)
+
+2- otras búsquedas: Podemos ver el Clima de otros países
+
+3- tu búsqueda: Por medio del buscador podemos encontrar el lugar que queremos ver (para una mayor precisión de búsqueda es conveniente escribir la ciudad y el país. Por ejemplo: corrientes,AR - santa cruz,BO - cali,CO )
+
+NOTA: para que la localización funcione correctamente es necesario dar permisos de ubicación(te lo pedirá una vez entres en el link)
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
